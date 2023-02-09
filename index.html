@@ -7,11 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: Roboto, sans-serif;
       background: url(d2.png);
+      background-color: rgba(0,0,0,0.7);
+      background-blend-mode: multiply;
       background-attachment: fixed;
+      color: white;
+      text-shadow: 2px 2px 3px black;
     }
     header {
       background-color: orangered;
@@ -20,46 +30,156 @@
       left: 0;
       right: 0;
     }
+    header nav {
+      border: 1px solid transparent;
+    }
     header nav a {
       color: white;
       text-decoration: none;
       padding: 20px 10px;
       display: inline-block;
       font-size: 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 5px;
     }
 
     main {
-      min-height: 100vh;
-      background-color: wheat;
-      padding: 40px;
-      background-blend-mode: multiply;
-      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      max-width: 100%;
+      overflow: hidden;
     }
-    main h1,
-    main h2 {
-      color: white;
-      text-shadow: 2px 2px 3px black;
+    main h1 {
+      font-size: 2.8rem;
+      min-width: 300px;
+      width: 50%;
+    }
+    main p {
+      font-size: 24px;
+      line-height: 140%;
+      text-align: justify;
     }
     footer {
       padding: 40px;
       text-align: center;
       background-color: orangered;
     }
+
+
+
+
+    section {
+      width: 100%;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.4rem;
+    }
+    section p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    section .category-assortment-wrapper {
+      display: grid;
+      gap: 5px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .category-assortment-wrapper .category-assortment-item {
+      border: 4px solid white;
+      min-height: 200px;
+      padding: 5px;
+    }
+    .category-assortment-item img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .category-assortment-item-description {
+      //border: 2px solid red;
+      max-height: 400px;
+      overflow-y: scroll;
+    }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#">Аптечки, набори-укладки</a>
+      <a href="#medkits">Аптечки, набори-укладки</a>
       <a href="#">Сумки, рюкзаки, валізи</a>
       <a href="#">Догляд за хворими</a>
-      <a href="#"></a>
+      <a href="#">Медичне обладнання</a>
     </nav>
   </header>
   <main>
     <h1>HeliosVivus - медичні товари для будь-яких потреб</h1>
-    <h2>Вітаємо на нашому сайті-презентації! Тут ви знайдете набори для лікарів, термоконтейнери, прилади для фізіотерапії та багато іншого.</h2>
+    <p>Вітаємо на нашому сайті-презентації! Ми - компанія з багаторічним досвідом у галузі догляду за людьми та збереженні життів. Вся наша продукція якісна без вийнятків, і ми впевнені, ви отримаєте саме те що вам потрібно. Тут ви знайдете набори для лікарів, термоконтейнери, прилади для фізіотерапії та багато іншого.</p>
   </main>
+  <section id="medkits">
+    <h2 class="category-name">Аптечки, набори-укладки</h2>
+    <p class="category-description">Усе що допоможе зупинити кров, зняти запаморочення, допомогти потребуючому в одному місці. До вашої уваги різноманітні комплекти аптечок на всі можливі випадки.</p>
+    <div class="category-assortment-wrapper">
+      <div class="category-assortment-item">
+        <img src="templ.jpg" />
+        <h3 class="category-assortment-item-title">Аптечка для ЗСУ, варіант 1</h3>
+        <p class="category-assortment-item-description">
+          1. Бандаж Израильского типа, 1 шт. - предназначен для оказания медицинской помощи при ранениях, для перевязывания ран и для обеспечения эффективного давления на источник кровотечения.
+          2. Компрессионная стерильная повязка 8см х 10см, 1 шт. – стерильная повязка, которая служит для наложения на рану с целью остановки кровотечения и защиты раны от проникновения инфекции.
+          3. Химическая кровоостанавливающая марлевая повязка для тампонады, 1 шт. – предназначена для тампонады огнестрельных, колотых, рваных ран, способствует эффективной остановке кровотечения за счет создания давления в ране.
+          4.Повязка окклюзионная для открытых ран грудной клетки, 2 шт. - окклюзивная повязка используется для входных/выходных ранений при пневмотораксах.
+          5. Лейкопластырь 5м х 2,5см, 1 шт. - применяют для фиксации повязки при ранах и ожогах.
+          6. Жгут кровоостанавливающий CAT (Combat Application Tourniquet), 2 шт.
+          7.Перчатки нитриловые нестерильные (размер L или XL), 1 пара – для защиты рук при оказании медицинской помощи.
+          8.Термоодеяло 160см х 210см, 1 шт. - используют для защиты пострадавшего от переохлаждения, от воздействия внешней среды и переноса тяжелых предметов.
+          9. Ножницы (атравматические), 1 шт. - для разрыва бинта, лейкопластыря, одежды, поясов безопасности и т.д.
+
+          10. Воздуховод назофарингальный, 1 шт. – для временной интубации трахеи.
+          11. Аптечка, 1 шт.
+          12.Маркер, 1 шт. – для нанесения информации.
+          13 .Карточка пострадавшего бойца (установленного образца), 1 шт.
+        </p>
+      </div>
+      <div class="category-assortment-item">
+        <img src="kit.jpg" />
+        <h3 class="category-assortment-item-title">Аптечка для водіїв АМА-1</h3>
+        <p class="category-assortment-item-description">
+          Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
+          Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
+          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Футляр - водонепроникний сумковий нейлон.
+          АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
+          НАБІР №1
+          1. Джгут для зупинки кровотечі - 1 од.
+          2. Бинт еластичний 8х1 - 1 од.
+          3. Бинт стерильний 5х10 см - 2 од.
+          4. Бинт стерильний 7х14 см - 1 од.
+          5. Бинт нестерильний 7х14 см - 1 од.
+          6. Бинт нестерильний 5х5 см - 1 од
+          7. Серветки з хлоргексидином, № 2 - 1 од.
+          8. Серветки кровоспинні з фурагіном, № 2 - 1 од.
+          9. Стерильна Серветка двошарова 45х29 - 1 од.
+          10. Пакет перев'язувальний стерильний - 1 од.
+          11. Ножиці - 1 од.
+
+          НАБІР №2
+          І. Засоби накладання пов'язаність зв'язок при травмах
+          1. Косинка медична перев'язна (50х50) - 1 од.
+          2. Гелева пов'язаність язка або противоопіковий набір - 1 од.
+          3. Рукавички медичні № 7,8 з поліетилену - 1 пара
+          4. Плівка (клапан) для проведення штучної вентиляції легенів - 1 од.
+          5. Шпильки англійські - 2 од.
+          6. Термопокривало - 1 од.
+          7. Пінцет - 1 од.
+          Інструкція про користування засобами автомобільної аптечки
+          Футляр для аптечки
+        </p>
+      </div>
+      <div class="category-assortment-item"></div>
+      <div class="category-assortment-item"></div>
+      <div class="category-assortment-item"></div>
+    </div>
+  </section>
   <footer>
     © Юлія Науменко, 2023 / HeliosVivus - Всі права захищено.
   </footer>
