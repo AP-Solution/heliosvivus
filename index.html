@@ -12,6 +12,7 @@
     }
     html {
       scroll-behavior: smooth;
+      --main-color: rgba(255,69,0,0.8);
     }
     body {
       margin: 0;
@@ -24,7 +25,7 @@
       text-shadow: 2px 2px 3px black;
     }
     header {
-      background-color: orangered;
+      background-color: var(--main-color);
       text-align: center;
       position: sticky;
       left: 0;
@@ -62,7 +63,7 @@
     footer {
       padding: 40px;
       text-align: center;
-      background-color: orangered;
+      background-color: var(--main-color);
     }
 
 
@@ -89,7 +90,6 @@
     }
     .category-assortment-wrapper .category-assortment-item {
       border: 4px solid white;
-      min-height: 200px;
       padding: 5px;
     }
     .category-assortment-item img {
@@ -97,9 +97,13 @@
       object-fit: cover;
     }
     .category-assortment-item-description {
-      //border: 2px solid red;
-      max-height: 400px;
+      padding: 0 10px;
+      max-height: 300px;
       overflow-y: scroll;
+    }
+    .category-assortment-item-price {
+      text-align: center;
+      font-size: 24px;
     }
   </style>
 </head>
@@ -139,6 +143,7 @@
           12.Маркер, 1 шт. – для нанесения информации.
           13 .Карточка пострадавшего бойца (установленного образца), 1 шт.
         </p>
+        <div class="category-assortment-item-price">Ціна за одиницю: 2550 ₴</div>
       </div>
       <div class="category-assortment-item">
         <img src="kit.jpg" />
@@ -161,7 +166,20 @@
           9. Стерильна Серветка двошарова 45х29 - 1 од.
           10. Пакет перев'язувальний стерильний - 1 од.
           11. Ножиці - 1 од.
-
+          Інструкція про користування засобами автомобільної аптечки
+          Футляр для аптечки
+          
+        </p>
+      </div>
+      <div class="category-assortment-item">
+        <img src="autokit.jpg" />
+        <h3>Аптечка для водіїв AP-NEW Євростандарт</h3>
+        <p class="category-assortment-item-description">
+          Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
+          Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
+          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Футляр - водонепроникний сумковий нейлон.
+          АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
           НАБІР №2
           І. Засоби накладання пов'язаність зв'язок при травмах
           1. Косинка медична перев'язна (50х50) - 1 од.
@@ -177,7 +195,34 @@
       </div>
       <div class="category-assortment-item"></div>
       <div class="category-assortment-item"></div>
-      <div class="category-assortment-item"></div>
+    </div>
+  </section>
+  <section id="medbags">
+    <h2 class="category-name">Медичні сумки/рюкзаки, термоконтейнери</h2>
+    <p class="category-description">Аби завжди вистачило місця для збереження та транспорту всього необхідного і за належної температури, ми підготували якісні контейнери для всього, що може знадобитися як у стаціонарній, так і польовій медицині</p>
+    <div class="category-assortment-wrapper">
+      <div class="category-assortment-item">
+        <img src="autokit.jpg" />
+        <h3>Аптечка для водіїв AP-NEW Євростандарт</h3>
+        <p class="category-assortment-item-description">
+          Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
+          Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
+          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Футляр - водонепроникний сумковий нейлон.
+          АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
+          НАБІР №2
+          І. Засоби накладання пов'язаність зв'язок при травмах
+          1. Косинка медична перев'язна (50х50) - 1 од.
+          2. Гелева пов'язаність язка або противоопіковий набір - 1 од.
+          3. Рукавички медичні № 7,8 з поліетилену - 1 пара
+          4. Плівка (клапан) для проведення штучної вентиляції легенів - 1 од.
+          5. Шпильки англійські - 2 од.
+          6. Термопокривало - 1 од.
+          7. Пінцет - 1 од.
+          Інструкція про користування засобами автомобільної аптечки
+          Футляр для аптечки
+        </p>
+      </div>
     </div>
   </section>
   <footer>
