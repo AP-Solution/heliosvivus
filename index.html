@@ -2,125 +2,22 @@
 <html lang="ru">
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-      --main-color: rgba(255,69,0,0.8);
-    }
-    body {
-      margin: 0;
-      font-family: Roboto, sans-serif;
-      background: url(d2.png);
-      background-color: rgba(0,0,0,0.7);
-      background-blend-mode: multiply;
-      background-attachment: fixed;
-      color: white;
-      text-shadow: 2px 2px 3px black;
-    }
-    header {
-      background-color: var(--main-color);
-      text-align: center;
-      position: sticky;
-      left: 0;
-      right: 0;
-    }
-    header nav {
-      border: 1px solid transparent;
-    }
-    header nav a {
-      color: white;
-      text-decoration: none;
-      padding: 20px 10px;
-      display: inline-block;
-      font-size: 20px;
-      border: 2px solid white;
-      border-radius: 10px;
-      margin: 5px;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 100%;
-      overflow: hidden;
-    }
-    main h1 {
-      font-size: 2.8rem;
-      min-width: 300px;
-      width: 50%;
-    }
-    main p {
-      font-size: 24px;
-      line-height: 140%;
-      text-align: justify;
-    }
-    footer {
-      padding: 40px;
-      text-align: center;
-      background-color: var(--main-color);
-    }
-
-
-
-
-    section {
-      width: 100%;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    section h2 {
-      text-align: center;
-      font-size: 2.4rem;
-    }
-    section p {
-      text-align: center;
-      font-size: 20px;
-    }
-
-    section .category-assortment-wrapper {
-      display: grid;
-      gap: 5px;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    .category-assortment-wrapper .category-assortment-item {
-      border: 4px solid white;
-      padding: 5px;
-    }
-    .category-assortment-item img {
-      max-width: 100%;
-      object-fit: cover;
-    }
-    .category-assortment-item .img-container {
-      //border: 5px solid gold;
-      display: flex;
-      overflow-x: scroll;
-    }
-    .category-assortment-item-description {
-      padding: 0 10px;
-      max-height: 300px;
-      overflow-y: scroll;
-    }
-    .category-assortment-item-price {
-      text-align: center;
-      font-size: 24px;
-    }
-  </style>
+  <title>HeliosVivus</title>
 </head>
 <body>
-  <header>
-    <nav>
+    <nav class="page-navigation">
       <a href="#medkits">Аптечки, набори-укладки</a>
-      <a href="#">Сумки, рюкзаки, валізи</a>
+      <a href="#medbags">Сумки, рюкзаки, валізи</a>
       <a href="#">Догляд за хворими</a>
       <a href="#">Медичне обладнання</a>
     </nav>
-  </header>
+    <div class="hamburger">
+      <span></span>
+    </div>
   <main>
     <h1>HeliosVivus - медичні товари для будь-яких потреб</h1>
     <p>Вітаємо на нашому сайті-презентації! Ми - компанія з багаторічним досвідом у галузі догляду за людьми та збереженні життів. Вся наша продукція якісна без вийнятків, і ми впевнені, ви отримаєте саме те що вам потрібно. Тут ви знайдете набори для лікарів, термоконтейнери, прилади для фізіотерапії та багато іншого.</p>
@@ -156,7 +53,7 @@
         <p class="category-assortment-item-description">
           Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
           Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
-          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Призначена для укомплектування легкових та вантажних автомобілів, тракторів.
           Футляр - водонепроникний сумковий нейлон.
           АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
           НАБІР №1
@@ -182,11 +79,10 @@
         <p class="category-assortment-item-description">
           Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
           Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
-          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Призначена для укомплектування легкових та вантажних автомобілів, тракторів.
           Футляр - водонепроникний сумковий нейлон.
           АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
           НАБІР №2
-          І. Засоби накладання пов'язаність зв'язок при травмах
           1. Косинка медична перев'язна (50х50) - 1 од.
           2. Гелева пов'язаність язка або противоопіковий набір - 1 од.
           3. Рукавички медичні № 7,8 з поліетилену - 1 пара
@@ -212,11 +108,10 @@
         <p class="category-assortment-item-description">
           Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
           Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
-          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Призначена для укомплектування легкових та вантажних автомобілів, тракторів.
           Футляр - водонепроникний сумковий нейлон.
           АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
           НАБІР №2
-          І. Засоби накладання пов'язаність зв'язок при травмах
           1. Косинка медична перев'язна (50х50) - 1 од.
           2. Гелева пов'язаність язка або противоопіковий набір - 1 од.
           3. Рукавички медичні № 7,8 з поліетилену - 1 пара
@@ -239,11 +134,10 @@
         <p class="category-assortment-item-description">
           Автомобільна аптечка АМА-1 укомплектована згідно з вимогою ДСТУ 3961-2000 (Зміна 2, ДЕРЖАВНИЙ СТАНДАРТ УКРАЇНИ).
           Як показує практика, правила експлуатації автомобілів посилюються і дорожня поліція вимагає наявність аптечки саме згідно цього ДСТУ.
-          Призначена для укомплектування легкових і вантажних автомобілів, тракторів.
+          Призначена для укомплектування легкових та вантажних автомобілів, тракторів.
           Футляр - водонепроникний сумковий нейлон.
           АВТОМОБІЛЬНА АПТЕЧКА ПЕРШОЇ ДОПОМОГИ
           НАБІР №2
-          І. Засоби накладання пов'язаність зв'язок при травмах
           1. Косинка медична перев'язна (50х50) - 1 од.
           2. Гелева пов'язаність язка або противоопіковий набір - 1 од.
           3. Рукавички медичні № 7,8 з поліетилену - 1 пара
@@ -260,5 +154,6 @@
   <footer>
     © Юлія Науменко, 2023 / HeliosVivus - Всі права захищено.
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
